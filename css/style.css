@@ -185,6 +185,32 @@ textarea{
     margin-top: 10px;
 }
 
-.vovo h3{
-    color: #eee ;
+.vovo a{
+    color: #eee;
+    margin-block-start: auto;
+}
+
+
+.check{
+    color: #eee;
+    background-color: black;
+    margin: 200px;
+    text-align: center;
+}
+
+.save{
+    background-color: bisque;
+    color: black;
+}
+
+.table{
+    background-color: beige;
+    color: rgb(8, 8, 8);
+    text-align: center;
+    justify-content: center;
+    margin-left: 35%;
+    margin-bottom: 300px;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 30px;
 }
