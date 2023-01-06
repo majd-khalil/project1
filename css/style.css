@@ -1,216 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&family=Cairo&display=swap');
-
-*{
-    padding: 0;
-    margin: 0;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap');
 body{
-    background-color: #eee;
-   font-family: 'Courier New', Courier, monospace;
+    font-family: 'Almarai', sans-serif;
 }
 
-ul{
-    background-color: rgb(46, 45, 45);
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-ul li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-ul li :hover{
-    background-color: red;
-}
-
-ul li a {
+.header{
+    background-color: black;
     color: white;
-    text-decoration: none;
+    height: 70px;
+    line-height: 50px;
 }
 
-.main-image{
-    height: 350px;
-    background-image: url("../image/m5.avif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+.majd a{
+    float: left;
+}
+.header a {
+    float: right;
 }
 
+/*start slider*/
 
-.our-features{
-    padding-top: 50px;
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 50px;
+.carousel-indicators li{
+    height: 10px;
+    background-color: black;
+}
+/*lal tdlil bndalil lsora*/
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(188, 189, 181, 0.116);
+    position: absolute;
+    z-index: 1;
 }
 
-.our-features h1{
-    color: red;
-}
+/* end slider*/
 
+/* start features*/
 .features{
-    display: flex;
-    margin-top: 25px;
-}
-.features .feature{
-    text-align: center;
-    background-color: white;
-    width: 30%;
-    margin: auto;
-    padding: 15px;
-    height: 200px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s;
+    margin: 75px;
 }
 
-.feature:hover{
-    box-shadow: 3px 3px 10px rgb(173, 18, 18) ;
-    transform: translateX(3px);
-}
-
-.features .feature i{
-    padding: 15px;
-    font-size: 30px;
-    background-color: red;
+.features i {
+    width: 100px;
+    height: 100px;
+    background-color:blue;
+    line-height: 100px;
     color: white;
-    border-radius: 50%;
-
+    font-size: 40px;
+    margin-top: 20px;
 }
 
-.features .feature h3{
-    font-size: 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-
-/*start content style*/
-
-.content{
-    width: 80%;
-    padding: 50px;
-    margin: auto;
-    text-align: center;
+.features h3 {
     background-color: white;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.content h1{
-    color: red;
+.features p{
+    color: rgb(73, 72, 72);
+    line-height: 1.8;
 }
 
-.content p{
-    font-size: 20px;
-    margin-bottom: 25px;
-    text-align: auto;
-    margin: 70px;
+.features h2{
+    margin-bottom: 20px;
 }
+/* end features*/
 
-.content img{
-    width: 300px;
-    background-size: cover ;
+/*start out team*/
+
+.our-team{
+    background-color: #eee;
+    padding: 20px;
+    background-image: url(../images/);
+    border-bottom:5px solid rgb(4, 175, 228);
+}
+/*end our team*/
+
+/*start statistic*/
+
+.statistic{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/logo.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-size: cover;
+    margin-top: 100px;
+    background-attachment: fixed;
 }
 
-
-.contact-us{
-    margin-top: 100px;
+.statistic .dverlay{
+    padding-top: 100px;
+    background-color:rgba(160, 156, 156, 0.37);
+    width: 100%;
+    height: 100%;
     margin-bottom: 100px;
 }
 
-.contact-form{
-    width: 700px;
-    margin: auto;
-    padding: 40px ;
-    text-align: center;
-    border-radius: 7px;
-}
-
-.input-form{
-    margin-bottom: 20px;
-    background-color: rgb(255, 255, 255);
-}
-
-.input-form input{
-    width: 400px;
-    height: 30px;
-    border: 1px solid black;
-    border-radius: 3px;
-    background-color: whitesmoke;
-}
-
-textarea{
-    width: 400px;
-    height: 200px;
-    border: 1px solid black;
-    border-radius: 3px;
-    background-color: whitesmoke;
-    margin-right: 20px;
-}
-
-.btn-send{
-    background-color: whitesmoke;
-    width: 200px;
-    height: 50px;
-    border: 1px solid rgb(114, 112, 112);
-    border-radius: 5px;
-    font-size: 20px;
-    cursor: pointer;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-}
-
-.k{
-    color: red;
-    background-color: green;
-}
-
-.footer i{
-    padding: 15px;
-    font-size: 30px;
-    background-color: blue;
-    color: white;
-    border-radius: 50%;
-    
-}
-.vovo{
-    display: flex; 
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.vovo a{
-    color: #eee;
-    margin-block-start: auto;
-}
-
-
-.check{
-    color: #eee;
-    background-color: black;
-    margin: 200px;
-    text-align: center;
-}
-
-.save{
-    background-color: bisque;
+.statistic .dverlay h3{
     color: black;
 }
 
-.table{
-    background-color: beige;
-    color: rgb(8, 8, 8);
-    text-align: center;
-    justify-content: center;
-    margin-left: 35%;
-    margin-bottom: 300px;
-    border: 1px solid red;
+.statistic .dverlay{
+    color: red;
+    font-size: 40px;
+}
+
+.polo{
+    color: black;
+    font-size: 20px;
+}
+/*end statistic*/
+
+
+
+/* start coustomer*/
+
+.our-customers{
+    margin-bottom: 100px;
+    background-color: #eee;
+    line-height: 100px;
+    background-image: url(../images/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom:5px solid rgb(4, 175, 228);
+}
+/* end coustomer*/
+
+
+/*start resent news*/
+
+.resent_news .btn-danger {
+    color: #fff;
+    background-color: #356edc;
+    border-color: #356edc;
+}
+/*end resent news*/
+
+/*start footer*/
+
+footer{
+    background-color: rgb(4, 175, 228);
+    padding: 30px;
+    background-image: url(../images/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2px;
+}
+
+footer p{
+    color: white;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: red;
+}
+
+footer ul li {
+    list-style: none;
+}
+/*end footer*/
+
+.jumbotron{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jumbotron .blog_info{
+    flex 2
+}
+
+.jumbotron .blog_image{
+    flex 2
+}
+
+.blog_details p {
+    line-height: 1.2;
     padding: 10px;
-    border-radius: 30px;
+}
+
+ /* courses page*/
+.courses img:hover{
+    transform: scale(1.1);
 }
